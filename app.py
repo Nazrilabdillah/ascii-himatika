@@ -5,6 +5,8 @@ import random
 #from PIL import Image as img
 
 
+def get_file_path(relative_path):
+    return os.path.join(os.path.dirname(__file__), "static", relative_path)
 
 def fr(path):
     file = open("bird_text/"+path,"r")
@@ -12,6 +14,9 @@ def fr(path):
 app = Flask(__name__)
 @app.route('/')
 def animated_ascii():
+    
+    return "iii"+ open(get_file_path("i.txt),"r").read()
+    """
     def generate():
 
          while True:
@@ -21,6 +26,7 @@ def animated_ascii():
             time.sleep(5)
             
     return Response(generate(), mimetype='text/plain')
+"""
 @app.route('/bird')
 def index():
     def generate():
