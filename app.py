@@ -2,7 +2,7 @@ from flask import Flask,Response
 import os
 import time
 import random
-from PIL import Image as img
+#from PIL import Image as img
 
 
 
@@ -32,5 +32,3 @@ def index():
     return Response(generate(), mimetype='text/plain')
 
 
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=8080)
