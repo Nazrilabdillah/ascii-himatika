@@ -15,7 +15,7 @@ app = Flask(__name__)
 @app.route('/')
 def animated_ascii():
     
-    return "iii" + open(get_file_path("i.txt),"r").read()
+    return os.path.dirname(__file__) #"iii" + open(get_file_path("i.txt),"r").read()
 """
     def generate():
 
