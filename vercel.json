@@ -1,4 +1,4 @@
-{
+g{
   "version": 2,
   "builds": [
     {
@@ -11,5 +11,6 @@
       "src": "/(.*)",
       "dest": "app.py"
     }
-  ]
+  ],
+  "files": [ "logo_ascii.txt", "bird_text/*.txt" ]
 }
