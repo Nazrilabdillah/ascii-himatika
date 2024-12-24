@@ -15,7 +15,7 @@ def animated_ascii():
     def generate():
 
          while True:
-            frame = open("ogo_ascii.txt","r").read()
+            frame = open("/logo_ascii.txt","r").read()
             ran_num = random.randint(33,40)
             yield f"\033[1;34m{frame}\n"
             time.sleep(5)
