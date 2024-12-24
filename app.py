@@ -30,5 +30,7 @@ def index():
                  yield f"\033[1;{ran_num}m{fr(frame)}\n"
                  time.sleep(0.2)  # jeda antar frame
     return Response(generate(), mimetype='text/plain')
-
+@app.route('/test')
+def test():
+    return str(os.getcwd())
 
