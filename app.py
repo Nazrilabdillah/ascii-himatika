@@ -16,7 +16,7 @@ app = Flask(__name__)
 def animated_ascii():
     
     return "iii" #+ open(get_file_path("i.txt),"r").read()
-    """
+"""
     def generate():
 
          while True:
