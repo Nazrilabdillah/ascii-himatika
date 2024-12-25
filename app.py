@@ -38,5 +38,5 @@ def index():
     return Response(generate(), mimetype='text/plain')
 @app.route('/test')
 def test():
-    return str(os.getcwd())
+    return ""#str(os.getcwd())
 
